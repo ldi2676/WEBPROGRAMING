@@ -20,7 +20,7 @@
     var height = hei - hei2;
     var bar = (wins / height) * 100;
   
-    $('#myBar').css('width', bar + '%');
+  $('#myBar').css('width', bar + '%');
   
   });
   
