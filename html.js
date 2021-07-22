@@ -1,11 +1,19 @@
-$(window).scroll(function() {
-
-    var wins = $(this).scrollTop();
-    var hei = $('.content').outerHeight(); //전체 페이지 높이
-    var hei2 = $(window).outerHeight(); //윈도우의 높이
-    var height = hei - hei2;
-    var bar = (wins / height) * 100;
-  
-    $('#myBar').css('width', bar + '%');
-  
+window.addEventListener('DOMContentLoaded', function(){
+  //스크롤 이벤트 처리
+  window.addEventListener("scroll", function(event){
+      if(document.querySelector('.bar') != null)setProgress();
   });
+});
+*-////*-
+
+
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+

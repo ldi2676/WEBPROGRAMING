@@ -50,7 +50,17 @@ function checkVisible( elm, eval ) {
     if (eval == "above") return ((y < (viewportHeight + scrolltop)));
 }
 	</script>
-	<!-- <span class="bar" style="position: fixed; top: 0px; left: 0px; width: 93.9268%; height: 5px; background-color: rgb(255, 85, 68); z-index: 9999999;"></span> -->
+	<script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+        </script>
 	<div class="header">
 	<div class="progress-container">
 		<div class="bar" id ="myBar"></div>

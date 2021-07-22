@@ -1,7 +1,9 @@
-body {
-    margin: 0;
-    font-size: 28px;
-  }
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
   
   .header {
     position: fixed;
@@ -24,13 +26,20 @@ body {
   .progress-bar {
     height: 8px;
     background: #4caf50;
-    width: 0%;
-    transition: all .3s ease;
+    width: 1%;
+    transition: all 0.3s ease;
   }
+
+  .progress-bar > .progress {
+    width: 0%; /* 프로그래스바 진행 정도 */
+    height: 100%;
+    transition: width 0.3s ease; /* 부드러운 가속도 애니메이션 추가 */
+    background-color: #4caf50;
+}
   
   .content {
-    padding: 100px 0;
-    margin: 50px auto 0 auto;
-    width: 80%;
+    width: 100%;
+    height: 3000px; /* 스크롤바가 생기도록 강제로 가상 컨텐츠 높이 생성 */
+    background-color: #fafafa;
   }
   

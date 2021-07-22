@@ -2,8 +2,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="test.css">
         <script src="test.js"></script>
-        <script src="https://c
-        dnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
     </head>
     <body>
 
@@ -14,8 +13,19 @@
     <div class="progress-container">
       <div class="progress-bar" id="myBar"></div>
     </div>
-  </div>
+</div>
   
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
   <div class="content">
     <h3>Scroll Down to See The Effect</h3>
     <p>We have created a "progress bar" to <b>show how far a page has been scrolled</b>.</p>
