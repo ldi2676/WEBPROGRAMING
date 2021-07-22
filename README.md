@@ -1,2 +1,2 @@
 # WEBPROGRAMING
-웹프전용
+https://ldi2676.github.io/WEBPROGRAMING/
