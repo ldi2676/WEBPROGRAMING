@@ -3,5 +3,5 @@ var _showPage = function() {
     var container = $("div.container");
     loader.css("display","none");
     container.css("display","block");
-        window.location.herf="https://www.naver.com/"
+        window.location.herf="https://ldi2676.github.io/WEBPROGRAMING/index.html"
     };
