@@ -1,0 +1,38 @@
+body, html {
+    margin: 10;
+    padding: 5;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-image: url(image/자캐.png);
+      
+  }
+      ol {
+        /* color:red; */
+        /* text-decorration: none; */
+        text-align: center; 
+        vertical-align: middle; 
+        display: none;
+      }
+      .saw {
+        color:gray;
+      }
+      #active {
+        color:red;
+      }
+      h1 {
+        font-size:45px;
+        text-align: center;
+      }
+  
+      .bar {
+        height: 10px;
+        background: #18ff1f;
+        width: 2%; /* 프로그래스바 진행 정도 */
+        transition: all 2s ease; /* 부드러운 가속도 애니메이션 추가 */
+        margin: 0px auto 0 ; 
+        }
+      html{
+        cursor: url(image/icon_watson.png), auto
+      }

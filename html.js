@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', function(){
       if(document.querySelector('.bar') != null)setProgress();
   });
 });
-*-////*-
+
 
 
 // When the user scrolls the page, execute myFunction 
@@ -16,4 +16,8 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+
+$( document ).ready( function() {
+  $('li').fadeIn( 2000 );
+} );
 
