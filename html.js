@@ -1,3 +1,6 @@
+$( document ).ready( function() {
+  $('ol').fadeIn( 2000 );
+} );
 window.addEventListener('DOMContentLoaded', function(){
   //스크롤 이벤트 처리
   window.addEventListener("scroll", function(event){
@@ -17,7 +20,5 @@ function myFunction() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-$( document ).ready( function() {
-  $('li').fadeIn( 2000 );
-} );
+
 
