@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+</head>
+<body>
+  <script>
+    password = prompt("비밀번호");
+    if(password == 1111) {
+      document.write("안녕하세요. 주인님");
+    } else {
+      document.write("뉘신지?");
+    }
+    let sign = prompt("당신의 별자리는 무엇입니까?");
+
+    if (sign.toLowerCase() === "전갈자리") {
+    alert("와! 저도 전갈자리예요!");
+    }
+
+    // prompt 기능을 쓰는 방법은 다양합니다.
+    sign = window.prompt(); // 빈 대화 상자를 엽니다.
+    sign = prompt(); // 빈 대화 상자를 엽니다.
+    sign = window.prompt("님 지금 기분 좋아요?"); // 안내 문구 "님 지금 기분 좋아요?"가 보이는 창을 띄웁니다.
+    sign = window.prompt("님 지금 기분 좋아요?", "네."); // 안내 문구 "님 지금 기분 좋아요?"가 보이는 창을 띄우되 기본적으로 입력되어 있는 값은 "네."로 합니다.
+  </script>
+</body>
+</html>
