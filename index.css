@@ -55,7 +55,7 @@ body, html {
     width: 50px;
     height: 3px;
     border-radius: 3px;
-    background-color: #000;
+    background-color: rgb(232, 255, 251);
     transition: all 0.4s;
   }
 
