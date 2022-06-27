@@ -46,7 +46,7 @@
     }
 
     html {
-      cursor: url(image/icon_mycharacter.png), auto
+      /* cursor: url(image/icon_mycharacter.png), auto */
     }
 
     */
@@ -56,40 +56,39 @@
 </head>
 
 <body>
-  <h1><a href="index.html">HOME</a></h1>
+  <h1><a href="../Home/index.html">HOME</a></h1>
   <div class="progress-container">
     <!-- 스크롤 인디케이터 배경색 -->
     <div class="bar" id="myBar"></div>
     <!-- 스크롤 인디케이터 게이지 -->
   </div>
   <ol>
-    <li style="CURSOR:url(image/icon_watson.png)" id="watson" onclick="change_mouse()"><a href="">아멜리아 왓슨</a></li>
-    <li style="CURSOR: crosshair"><a onmouseover="setCursor(URL,'image/icon_mycharacter.png')" id="mychar"
-        href="">자캐</a></li>
+    <li style="CURSOR:url(../../image/자캐.png)" id="watson" onclick={change_mouse_amellia()}>아멜리아 왓슨</li>
+    <li style="CURSOR: crosshair" onclick={change_mouse_mycharicter()}>자캐</li>
   </ol>
   <script src="index.js"></script>
   <script src="scroll_indicater.js"></script>
   <script type="text/javascript">
-    function change_mouse() {
-      if (pointer.style.cursor.URL === "icon_mycharacter") {
-        pointer.style.cursor.URL = "image/icon_watson.png";
-      }
-      else {
-        pointer.style.cursor.URL = "image/icon_mycharacter"
-      }
+    function change_mouse_amellia() {
+      console.log("마우스 변경");
+      document.getElementsByTagName("body")[0].style.cursor = "url(../../image/icon_watson.png), auto";
     }
-    $('html').css({ 'cursor': 'url(image/icon_mycharacter.png), auto' });
-    $('watson').css({ 'cursor': 'url(image/icon_watson.png), auto' });
-    window.onload = function () {
-      var pointer = document.getElementById('watson');
+    function change_mouse_mycharicter() {
+      console.log("마우스 변경");
+      document.getElementsByTagName("body")[0].style.cursor = "url(../../image/icon_mycharacter.png), auto"
+    }
+    // $('html').css({ 'cursor': 'url(../../image/icon_mycharacter.png), auto' });
+    // $('watson').css({ 'cursor': 'url(../../image/icon_watson.png), auto' });
+    // window.onload = function () {
+    //   var pointer = document.getElementById('watson');
 
-      // header 객체에 onclick 이벤트 속성을 연결 
-      pointer.onclick = function () {
-        // pointer.style="cursor: crosshair";
-        pointer.style.cursor.URL = "image/icon_watson.png";
-        pointer.onclick = null;
-      }
-    };
+    //   // header 객체에 onclick 이벤트 속성을 연결
+    //   pointer.onclick = function () {
+    //     // pointer.style="cursor: crosshair";
+    //     pointer.style.cursor.URL = "image/icon_watson.png";
+    //     pointer.onclick = null;
+    //   }
+    // };
 
   </script>
 
