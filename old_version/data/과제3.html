@@ -2,7 +2,7 @@
 <html lang="kr">
 
 <head>
-    <title>20170786이동익 과제3</title>
+    <title>과제3 CSS</title>
     <meta char="utf-8">
     <style>
         header {
@@ -299,7 +299,7 @@
     <header>
         <a id="main"></a>
         <h1>CSS - 보고서</h1>
-        <h4 style="text-align : left">20170786이동익</h4>
+        <h4 style="text-align : left">과제3 CSS ldi2676</h4>
         <hr>
     </header>
     <section>
@@ -348,175 +348,177 @@
         <hr>
         <article>
             <p>
-                <h3>Text Color : 텍스트 색상</h3>
-                color속성 : 텍스트 색상 설정
-                <ul>
-                    <li>red와 같은 - 색 이름</li>
-                    <li>#의 FF0000와 같은 - 16 진수 값</li>
-                    <li>RGB (255,0,0)"- RGB 값</li>
-                </ul>
+            <h3>Text Color : 텍스트 색상</h3>
+            color속성 : 텍스트 색상 설정
+            <ul>
+                <li>red와 같은 - 색 이름</li>
+                <li>#의 FF0000와 같은 - 16 진수 값</li>
+                <li>RGB (255,0,0)"- RGB 값</li>
+            </ul>
+            <fieldset>
+                <legend>예시</legend>
+                <br> h5 {color: red;}
                 <fieldset>
-                    <legend>예시</legend>
-                    <br> h5 {color: red;}
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <h5 style="color :red">RED!</h5>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <h5 style="color :red">RED!</h5>
                 </fieldset>
+            </fieldset>
             </p>
 
             <p>
-                <h3>Text Alignment : 텍스트 정렬</h3>
-                text-align속성 : 텍스트를 정렬해줌
-                <br>　 center(중간), left(왼쪽), right(오른쪽), justify(양측 동일한 폭)
+            <h3>Text Alignment : 텍스트 정렬</h3>
+            text-align속성 : 텍스트를 정렬해줌
+            <br>　 center(중간), left(왼쪽), right(오른쪽), justify(양측 동일한 폭)
+            <fieldset>
+                <legend>예시</legend>
+                <br>h5{text-align: center;} h5{text-align: left;} h5{text-align: right;} div{text-align: justify;}
                 <fieldset>
-                    <legend>예시</legend>
-                    <br>h5{text-align: center;} h5{text-align: left;} h5{text-align: right;} div{text-align: justify;}
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <h5 style="text-align:center">중앙</h5>
-                        <h5 style="text-align:left">왼쪽</h5>
-                        <h5 style="text-align:right">오른쪽</h5>
-                        <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_text-align_all">justify예시보기</a>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <h5 style="text-align:center">중앙</h5>
+                    <h5 style="text-align:left">왼쪽</h5>
+                    <h5 style="text-align:right">오른쪽</h5>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_text-align_all">justify예시보기</a>
                 </fieldset>
+            </fieldset>
             </p>
 
             <p>
-                <h3>Text Decoration : 텍스트 장식</h3>
-                text-decoration속성 : 텍스트에 줄을 표시해줌
-                <br> none(없음),overline(윗줄), line-through(중간줄), underline(아랫줄)
-                <br>
+            <h3>Text Decoration : 텍스트 장식</h3>
+            text-decoration속성 : 텍스트에 줄을 표시해줌
+            <br> none(없음),overline(윗줄), line-through(중간줄), underline(아랫줄)
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br>a {text-decoration: none;} h5 {text-decoration: overline;} h5 {text-decoration: line-through;}
+                h5 {text-decoration: underline;}
                 <fieldset>
-                    <legend>예시</legend>
-                    <br>a {text-decoration: none;} h5 {text-decoration: overline;} h5 {text-decoration: line-through;} h5 {text-decoration: underline;}
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <h5 id="line1">overline</h5>
-                        <h5 id="line2">line-through</h5>
-                        <h5 id="line3">underline</h5>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <h5 id="line1">overline</h5>
+                    <h5 id="line2">line-through</h5>
+                    <h5 id="line3">underline</h5>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>Text Transformation : 텍스트 변환</h3>
-                text-transform속성 :텍스트 대문자 소문자 지정
-                <br> uppercase(전체 대문자), lowercase(전체 소문자), capotalize(앞글자 대문자)
-                <br>
+            <h3>Text Transformation : 텍스트 변환</h3>
+            text-transform속성 :텍스트 대문자 소문자 지정
+            <br> uppercase(전체 대문자), lowercase(전체 소문자), capotalize(앞글자 대문자)
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br>p.uppercase {text-transform: uppercase;}
+                <br> p.lowercase {text-transform: lowercase;}
+                <br> p.capitalize {text-transform: capitalize;}
                 <fieldset>
-                    <legend>예시</legend>
-                    <br>p.uppercase {text-transform: uppercase;}
-                    <br> p.lowercase {text-transform: lowercase;}
-                    <br> p.capitalize {text-transform: capitalize;}
-                    <fieldset>
 
-                        <legend>실행결과</legend>
-                        <p class="uppercase">This is some text.</p>
-                        <p class="lowercase">This is some text.</p>
-                        <p class="capitalize">This is some text.</p>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <p class="uppercase">This is some text.</p>
+                    <p class="lowercase">This is some text.</p>
+                    <p class="capitalize">This is some text.</p>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>Text Indentation : 텍스트 들여쓰기</h3>
-                text-indent속성 :　들여쓰기
-                <br> 첫 번째 줄 들여쓰기
-                <br>
+            <h3>Text Indentation : 텍스트 들여쓰기</h3>
+            text-indent속성 :　들여쓰기
+            <br> 첫 번째 줄 들여쓰기
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br>p {text-indent: 20px;}
                 <fieldset>
-                    <legend>예시</legend>
-                    <br>p {text-indent: 20px;}
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <p style="text-indent:20px">asd asd
-                            <br>asd asd</p>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <p style="text-indent:20px">asd asd
+                        <br>asd asd
+                    </p>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>Letter Spacing : 문자간격</h3>
-                letter-spacing속성 :　문자 사이의 간격 지정
-                <br>
+            <h3>Letter Spacing : 문자간격</h3>
+            letter-spacing속성 :　문자 사이의 간격 지정
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br>h4 {letter-spacing: 5px;} h4 {letter-spacing: -3px;}
                 <fieldset>
-                    <legend>예시</legend>
-                    <br>h4 {letter-spacing: 5px;} h4 {letter-spacing: -3px;}
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <h4 style="letter-spacing: 5px">This is some text.</h4>
-                        <h4 style="letter-spacing: -3px">This is some text.</h4>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <h4 style="letter-spacing: 5px">This is some text.</h4>
+                    <h4 style="letter-spacing: -3px">This is some text.</h4>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>Line Height : 라인 높이</h3>
-                line-height속성 :라인 사이의 공간 지정
-                <br>
+            <h3>Line Height : 라인 높이</h3>
+            line-height속성 :라인 사이의 공간 지정
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br>p.small {line-height: 0.8;} p.big {line-height: 1.8;}
+                <p>This is some text.(일반)</p>
                 <fieldset>
-                    <legend>예시</legend>
-                    <br>p.small {line-height: 0.8;} p.big {line-height: 1.8;}
-                    <p>This is some text.(일반)</p>
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <p style="line-height: 0.8px">This is some text.(0.8px)</p>
-                        <p style="line-height: 1.8px">This is some text.(1.8px)</p>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <p style="line-height: 0.8px">This is some text.(0.8px)</p>
+                    <p style="line-height: 1.8px">This is some text.(1.8px)</p>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>Text Direction : 텍스트 방향+글 반대로 쓰기</h3>
-                direction속성 : 텍스트의 방향을 변경하기 위해 사용
-                <br>
+            <h3>Text Direction : 텍스트 방향+글 반대로 쓰기</h3>
+            direction속성 : 텍스트의 방향을 변경하기 위해 사용
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br>p {direction: rtl;}
+                <p>This is some text.</p>
                 <fieldset>
-                    <legend>예시</legend>
-                    <br>p {direction: rtl;}
-                    <p>This is some text.</p>
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <p style="direction: rtl">This is some text.</p>
-                        <bdo dir="rtl">This is some text.</bdo>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <p style="direction: rtl">This is some text.</p>
+                    <bdo dir="rtl">This is some text.</bdo>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>Word Spacing : 띄어쓰기</h3>
-                word-spacing속성 : 텍스트 단어 사이의 간격 지정
-                <br>
+            <h3>Word Spacing : 띄어쓰기</h3>
+            word-spacing속성 : 텍스트 단어 사이의 간격 지정
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br>h4 {word-spacing: 10px;}h4 {word-spacing: -5px;}
                 <fieldset>
-                    <legend>예시</legend>
-                    <br>h4 {word-spacing: 10px;}h4 {word-spacing: -5px;}
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <h4 style="word-spacing:10px">띄 어 쓰 기</h4>
-                        <h4 style="word-spacing:-10px">띄 어 쓰 기</h4>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <h4 style="word-spacing:10px">띄 어 쓰 기</h4>
+                    <h4 style="word-spacing:-10px">띄 어 쓰 기</h4>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>Text Shadow : 텍스트 그림자</h3>
-                text-shadow속성 : 텍스트에 그림자 추가
-                <br>
+            <h3>Text Shadow : 텍스트 그림자</h3>
+            text-shadow속성 : 텍스트에 그림자 추가
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br>h4 {text-shadow: 3px 2px red;}
                 <fieldset>
-                    <legend>예시</legend>
-                    <br>h4 {text-shadow: 3px 2px red;}
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <h4 style="text-shadow: 3px 2px red">고기고기으아아아ㅏㅇ</h4>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <h4 style="text-shadow: 3px 2px red">고기고기으아아아ㅏㅇ</h4>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>Font Size:글꼴 크기</h3>
-                font-size속성: 텍스트의 크기, 폰트 크기 값은 절대적 또는 상대적 크기
-                <br>
+            <h3>Font Size:글꼴 크기</h3>
+            font-size속성: 텍스트의 크기, 폰트 크기 값은 절대적 또는 상대적 크기
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br>h4 {font-size: 40px;}, h4 {font-size: 30px;}, p {font-size: 14px;}
                 <fieldset>
-                    <legend>예시</legend>
-                    <br>h4 {font-size: 40px;}, h4 {font-size: 30px;}, p {font-size: 14px;}
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <h4 style="font-size: 40px">40px입니다.</h4>
-                        <h4 style="font-size: 30px">30px입니다.</h4>
-                        <p style="font-size: 40px">40px입니다</p>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <h4 style="font-size: 40px">40px입니다.</h4>
+                    <h4 style="font-size: 30px">30px입니다.</h4>
+                    <p style="font-size: 40px">40px입니다</p>
                 </fieldset>
+            </fieldset>
             </p>
         </article>
 
@@ -529,118 +531,118 @@
         <hr>
         <article>
             <p>
-                <h3>Font Families : 글꼴</h3>
-                font-family속성 : 원하는 글꼴로 시작하고 다른 글꼴을 사용할 수없는 경우 브라우저가, 일반 글꼴에서 유사한 글꼴로 대체함
-                <br> Serif (Times New Roman,Georgia), Sans-serif (Arial,Verdana), Monospace (Courier New, Lucida Console)
+            <h3>Font Families : 글꼴</h3>
+            font-family속성 : 원하는 글꼴로 시작하고 다른 글꼴을 사용할 수없는 경우 브라우저가, 일반 글꼴에서 유사한 글꼴로 대체함
+            <br> Serif (Times New Roman,Georgia), Sans-serif (Arial,Verdana), Monospace (Courier New, Lucida Console)
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br> p {font-family: "Times New Roman", Times, serif;} p {font-family: Arial, Helvetica, Times, serif;}
                 <br>
                 <fieldset>
-                    <legend>예시</legend>
-                    <br> p {font-family: "Times New Roman", Times, serif;} p {font-family: Arial, Helvetica, Times, serif;}
-                    <br>
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <p style="font-family : Times New Roman" ,Times,serif>Hello,WEBprogramming</p>
-                        <p style="font-family : Arial" ,Helvetica,sans-serif>Hello,WEBprogramming</p>
-                        <p style="font-family : Courier New" ,Lucida Console,Monospace>Hello,WEBprogramming</p>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <p style="font-family : Times New Roman" ,Times,serif>Hello,WEBprogramming</p>
+                    <p style="font-family : Arial" ,Helvetica,sans-serif>Hello,WEBprogramming</p>
+                    <p style="font-family : Courier New" ,Lucida Console,Monospace>Hello,WEBprogramming</p>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>Font Style : 글꼴 스타일</h3>
-                font-style속성:기울임 꼴 텍스트를 지정
-                <br> normal(정상), italic(이탤릭체), oblique(이탤릭체와 비슷) 예시))
+            <h3>Font Style : 글꼴 스타일</h3>
+            font-style속성:기울임 꼴 텍스트를 지정
+            <br> normal(정상), italic(이탤릭체), oblique(이탤릭체와 비슷) 예시))
+            <fieldset>
+                <legend>예시</legend>
+                <br> p.normal {font-style: normal;}, p.italic {font-style: italic;}, p.oblique {font-style: oblique;}
                 <fieldset>
-                    <legend>예시</legend>
-                    <br> p.normal {font-style: normal;}, p.italic {font-style: italic;}, p.oblique {font-style: oblique;}
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <p style="font-style:normal">normal</p>
-                        <p style="font-style:italic">italic</p>
-                        <p style="font-style:oblique">oblique</p>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <p style="font-style:normal">normal</p>
+                    <p style="font-style:italic">italic</p>
+                    <p style="font-style:oblique">oblique</p>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>Font Size(Pixels):글꼴 크기</h3>
-                font-size속성: 텍스트의 크기, 폰트 크기 값은 절대적 또는 상대적 크기
+            <h3>Font Size(Pixels):글꼴 크기</h3>
+            font-size속성: 텍스트의 크기, 폰트 크기 값은 절대적 또는 상대적 크기
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br> h4 {font-size: 40px;}, h4 {font-size: 30px;}, p {font-size: 14px;}
+                <fieldset>
+                    <legend>실행결과</legend>
+                    <h4 style="font-size: 40px">40px입니다.</h4>
+                    <h4 style="font-size: 30px">30px입니다.</h4>
+                    <p style="font-size: 14px">14px입니다.</p>
+                </fieldset>
+            </fieldset>
+            </p>
+            <p>
+            <h3>Font Size(Em):Em 글꼴 크기 설정</h3>
+            1em의 기본 크기= 16px
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br> h4 {font-size: 2.5em;
+                <span style="color:rgb(91, 247, 44)">/* 40px/16=2.5em */</span>}
+                <br> h4{font-size: 1.875em;
+                <span style="color:rgb(91, 247, 44)">/* 30px/16=1.875em */</span>}
+                <br> p{font-size: 0.875em;
+                <span style="color:rgb(91, 247, 44)">/* 14px/16=0.875em */</span>}
                 <br>
                 <fieldset>
-                    <legend>예시</legend>
-                    <br> h4 {font-size: 40px;}, h4 {font-size: 30px;}, p {font-size: 14px;}
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <h4 style="font-size: 40px">40px입니다.</h4>
-                        <h4 style="font-size: 30px">30px입니다.</h4>
-                        <p style="font-size: 14px">14px입니다.</p>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <h4 style="font-size : 2.5em">2.5em</h4>
+                    <h4 style="font-size : 1.875em">1.875em</h4>
+                    <p style="font-size : 0.875em">0.875em</p>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>Font Size(Em):Em 글꼴 크기 설정</h3>
-                1em의 기본 크기= 16px
+            <h3>Font Weight:글꼴 굵기</h3>
+            font-weight속성 : 폰트의 굵기를 지정
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br> p.normal {font-weight: normal;}
+                <br> p.thick {font-weight: bold;}
                 <br>
                 <fieldset>
-                    <legend>예시</legend>
-                    <br> h4 {font-size: 2.5em;
-                    <span style="color:rgb(91, 247, 44)">/* 40px/16=2.5em */</span>}
-                    <br> h4{font-size: 1.875em;
-                    <span style="color:rgb(91, 247, 44)">/* 30px/16=1.875em */</span>}
-                    <br> p{font-size: 0.875em;
-                    <span style="color:rgb(91, 247, 44)">/* 14px/16=0.875em */</span>}
-                    <br>
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <h4 style="font-size : 2.5em">2.5em</h4>
-                        <h4 style="font-size : 1.875em">1.875em</h4>
-                        <p style="font-size : 0.875em">0.875em</p>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <p style="font-weight : normal">normal</p>
+                    <p style="font-weight : bold">bold</p>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>Font Weight:글꼴 굵기</h3>
-                font-weight속성 : 폰트의 굵기를 지정
+            <h3>Responsive Font Size:응답 글꼴 크기</h3>
+            텍스트 크기 설정(윈도우 브라우저의 크기에 따라) vw은 "뷰포트 폭"을 의미, 뷰포트 폭 1vw = 1 %
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br> (h4 style="font-size:10vw")Hello World(/h4)
                 <br>
                 <fieldset>
-                    <legend>예시</legend>
-                    <br> p.normal {font-weight: normal;}
-                    <br> p.thick {font-weight: bold;}
-                    <br>
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <p style="font-weight : normal">normal</p>
-                        <p style="font-weight : bold">bold</p>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <h4 style="fontsize:10vw">Hello World</h4>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>Responsive Font Size:응답 글꼴 크기</h3>
-                텍스트 크기 설정(윈도우 브라우저의 크기에 따라) vw은 "뷰포트 폭"을 의미, 뷰포트 폭 1vw = 1 %
+            <h3>Font Variant : 글꼴 변형</h3>
+            font-variant속성: 텍스트가 작은 대문자 글꼴로 표시, 원래 대문자보다 작은 글꼴 크기
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br> p.normal {font-variant: normal;}
+                <br> p.small {font-variant: small-caps;}
                 <br>
                 <fieldset>
-                    <legend>예시</legend>
-                    <br> (h4 style="font-size:10vw")Hello World(/h4)
-                    <br>
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <h4 style="fontsize:10vw">Hello World</h4>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <p style="font-variant:normal">normal</p>
+                    <p style="font-variant:small-caps">small-caps</p>
                 </fieldset>
-            </p>
-            <p>
-                <h3>Font Variant : 글꼴 변형</h3>
-                font-variant속성: 텍스트가 작은 대문자 글꼴로 표시, 원래 대문자보다 작은 글꼴 크기
-                <br>
-                <fieldset>
-                    <legend>예시</legend>
-                    <br> p.normal {font-variant: normal;}
-                    <br> p.small {font-variant: small-caps;}
-                    <br>
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <p style="font-variant:normal">normal</p>
-                        <p style="font-variant:small-caps">small-caps</p>
-                    </fieldset>
-                </fieldset>
+            </fieldset>
             </p>
         </article>
 
@@ -653,109 +655,112 @@
         <hr>
         <article>
             <p>
-                <h3>Background Color:배경색</h3>
-                <ul>
-                    <li>background-color : 배경색 지정</li>
-                    <li>red와 같은 - 유효한 색 이름</li>
-                    <li>#의 FF0000와 같은 - 16 진수 값</li>
-                    <li>RGB (255,0,0)같은- RGB 값</li>
-                </ul>
-                <fieldset>
-                    <legend>예시</legend>
-                    <br> h1 {background-color: green;}
-                    <br> div {background-color: lightblue;}
-                    <br> p {background-color: yellow;}
-                    <br>
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <h1 style="background-color:green">H1입니다</h1>
-                        <div style="background-color:lightblue">div입니다</div>
-                        <p style="background-color:yellow">P입니다</p>
-                    </fieldset>
-                </fieldset>
-            </p>
-            <p>
-                <h3>Background Image : 배경이미지</h3>
-                background-image속성:요소의 배경으로 사용하는 이미지를 지정(기본적으로 반복)
+            <h3>Background Color:배경색</h3>
+            <ul>
+                <li>background-color : 배경색 지정</li>
+                <li>red와 같은 - 유효한 색 이름</li>
+                <li>#의 FF0000와 같은 - 16 진수 값</li>
+                <li>RGB (255,0,0)같은- RGB 값</li>
+            </ul>
+            <fieldset>
+                <legend>예시</legend>
+                <br> h1 {background-color: green;}
+                <br> div {background-color: lightblue;}
+                <br> p {background-color: yellow;}
                 <br>
                 <fieldset>
-                    <legend>예시</legend>
-                    <br> body {background-image: url("paper.gif");}
-                    <br> body {background-image: url("bgdesert.jpg");}
-                    <br>
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image">배경이미지 예시</a>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <h1 style="background-color:green">H1입니다</h1>
+                    <div style="background-color:lightblue">div입니다</div>
+                    <p style="background-color:yellow">P입니다</p>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>Background Image - Repeat Horizontally or Vertically:배경이미지-가로, 세로 반복</h3>
-                background-repeat속성: 요소의 배경으로 사용하는 이미지를 수평 및 수직으로 반복
+            <h3>Background Image : 배경이미지</h3>
+            background-image속성:요소의 배경으로 사용하는 이미지를 지정(기본적으로 반복)
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br> body {background-image: url("paper.gif");}
+                <br> body {background-image: url("bgdesert.jpg");}
                 <br>
                 <fieldset>
-                    <legend>예시</legend>
-                    <br> body {    background-image: url("gradient_bg.png");}
-                    <br>
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_gradient1">배경반복</a>
-                        <br> body {background-image: url("gradient_bg.png"); background-repeat: repeat-x;
-                        <span style="color:rgb(91, 247, 44)">// 가로방향 반복, 수직은 repeat-y}</span>
-                        <br>
-                        <a href="https://www.w3schools.com/css/css_background.asp">가로로 반복</a>
-                        <br>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image">배경이미지 예시</a>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>Background Image - Set position and no-repeat:배경 이미지 – 반복없음과 위치 설정</h3>
-                background-repeat속성 : no-repeat로 반복 해제
-                <br> background-position속성 : 위치지정
+            <h3>Background Image - Repeat Horizontally or Vertically:배경이미지-가로, 세로 반복</h3>
+            background-repeat속성: 요소의 배경으로 사용하는 이미지를 수평 및 수직으로 반복
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br> body {    background-image: url("gradient_bg.png");}
                 <br>
                 <fieldset>
-                    <legend>예시</legend>
-                    <br> body {background-image: url("img_tree.png");
-                    <br> background-repeat: no-repeat;
-                    <br> background-position: right top;}
+                    <legend>실행결과</legend>
+                    <a
+                        href="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_gradient1">배경반복</a>
+                    <br> body {background-image: url("gradient_bg.png"); background-repeat: repeat-x;
+                    <span style="color:rgb(91, 247, 44)">// 가로방향 반복, 수직은 repeat-y}</span>
                     <br>
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_position">위치 설정 및 반복 해제</a>
-                    </fieldset>
+                    <a href="https://www.w3schools.com/css/css_background.asp">가로로 반복</a>
+                    <br>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>Background Image - Fixed position:배경 이미지 - 고정 위치</h3>
-                background-attachment속성:배경 이미지가 고정되도록 지정(스크롤 고정)
+            <h3>Background Image - Set position and no-repeat:배경 이미지 – 반복없음과 위치 설정</h3>
+            background-repeat속성 : no-repeat로 반복 해제
+            <br> background-position속성 : 위치지정
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br> body {background-image: url("img_tree.png");
+                <br> background-repeat: no-repeat;
+                <br> background-position: right top;}
                 <br>
                 <fieldset>
-                    <legend>예시</legend>
-                    <br> body {background-image: url("img_tree.png");
-                    <br> background-repeat: no-repeat; background-position: right top;
-                    <br> background-attachment: fixed;}
-                    <br>
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_attachment">사진 위치 고정</a>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_position">위치 설정 및
+                        반복 해제</a>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>Background - Shorthand property:배경 - 약식 속성</h3>
-                코드를 단축하기 위해 사용
-                <br> background속성: 순서는 다음과 같습니다
-                <ul>
-                    <li>background-color</li>
-                    <li>background-image</li>
-                    <li>background-repeat</li>
-                    <li>background-attachment</li>
-                    <li>background-position</li>
-                </ul>
+            <h3>Background Image - Fixed position:배경 이미지 - 고정 위치</h3>
+            background-attachment속성:배경 이미지가 고정되도록 지정(스크롤 고정)
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br> body {background-image: url("img_tree.png");
+                <br> background-repeat: no-repeat; background-position: right top;
+                <br> background-attachment: fixed;}
+                <br>
                 <fieldset>
-                    <legend>예시</legend>
-                    <br> body {background: #ffffff url("img_tree.png") no-repeat right top;}
+                    <legend>실행결과</legend>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_attachment">사진 위치
+                        고정</a>
+                </fieldset>
+            </fieldset>
             </p>
+            <p>
+            <h3>Background - Shorthand property:배경 - 약식 속성</h3>
+            코드를 단축하기 위해 사용
+            <br> background속성: 순서는 다음과 같습니다
+            <ul>
+                <li>background-color</li>
+                <li>background-image</li>
+                <li>background-repeat</li>
+                <li>background-attachment</li>
+                <li>background-position</li>
+            </ul>
+            <fieldset>
+                <legend>예시</legend>
+                <br> body {background: #ffffff url("img_tree.png") no-repeat right top;}
+                </p>
         </article>
 
 
@@ -768,106 +773,107 @@
         <hr>
         <article>
             <p>
-                <h3>The translate() Method:이동 메소드</h3>
-                translate()있어서 (상기 X 축 및 Y 축에 주어진 파라미터에 따라) 현재 위치에서 요소를 이동시킨다.
+            <h3>The translate() Method:이동 메소드</h3>
+            translate()있어서 (상기 X 축 및 Y 축에 주어진 파라미터에 따라) 현재 위치에서 요소를 이동시킨다.
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br> div {transform: translate(50px, 6px);}
                 <br>
                 <fieldset>
-                    <legend>예시</legend>
-                    <br> div {transform: translate(50px, 6px);}
-                    <br>
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <div class="t1">
-                            오른쪽으로 50px만큼 아래쪽으로 6px만큼 이동함.
-                        </div>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <div class="t1">
+                        오른쪽으로 50px만큼 아래쪽으로 6px만큼 이동함.
+                    </div>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>The rotate() Method:회전 메소드</h3>
-                rotate()방법은 소정의 정도에 따른 소자를 시계 방향 또는 시계 반대 방향으로 회전
+            <h3>The rotate() Method:회전 메소드</h3>
+            rotate()방법은 소정의 정도에 따른 소자를 시계 방향 또는 시계 반대 방향으로 회전
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br>div {transform: rotate(10deg);
+                <span style="color:rgb(91, 247, 44)">/*시계방향으로 10도 회전*/</span>}
+                <br> div {transform: rotate(-10deg);
+                <span style="color:rgb(91, 247, 44)">/*반시계방향으로 10도 회전*/</span>}
+                <br>
                 <br>
                 <fieldset>
-                    <legend>예시</legend>
-                    <br>div {transform: rotate(10deg);
-                    <span style="color:rgb(91, 247, 44)">/*시계방향으로 10도 회전*/</span>}
-                    <br> div {transform: rotate(-10deg);
-                    <span style="color:rgb(91, 247, 44)">/*반시계방향으로 10도 회전*/</span>}
-                    <br>
-                    <br>
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <div id="t2">
-                            시계방향으로 10도 회전하였습니다.
-                        </div>
-                        <div id="t3">
-                            반시계방향으로 10도 회전하였습니다.
-                        </div>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <div id="t2">
+                        시계방향으로 10도 회전하였습니다.
+                    </div>
+                    <div id="t3">
+                        반시계방향으로 10도 회전하였습니다.
+                    </div>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>The scale() Method:규모 메소드</h3>
-                scale()있어서 증가하거나 (폭 및 높이에 대한 특정 매개 변수에 따라) 요소의 크기를 감소
-                <br>
+            <h3>The scale() Method:규모 메소드</h3>
+            scale()있어서 증가하거나 (폭 및 높이에 대한 특정 매개 변수에 따라) 요소의 크기를 감소
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br>div {transform: scale(2, 3);
+                <span style="color:rgb(91, 247, 44)">/*폭 2배, 높이 3배*/</span>}
+                <br> div {transform: scale(0.5, 0.5);
+                <span style="color:rgb(91, 247, 44)">/*폭,높이 절반*/</span>}
                 <fieldset>
-                    <legend>예시</legend>
-                    <br>div {transform: scale(2, 3);
-                    <span style="color:rgb(91, 247, 44)">/*폭 2배, 높이 3배*/</span>}
-                    <br> div {transform: scale(0.5, 0.5);
-                    <span style="color:rgb(91, 247, 44)">/*폭,높이 절반*/</span>}
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <div id="t4">폭 2배, 높이 3배로 증가 하였습니다</div>
-                        <div id="t5">폭과 높이가 절반으로 감소 하였습니다</div>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <div id="t4">폭 2배, 높이 3배로 증가 하였습니다</div>
+                    <div id="t5">폭과 높이가 절반으로 감소 하였습니다</div>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>The skewX() Method, The skewY() Method : skewX () 메소드, skewY () 메소드</h3>
-                X또는 Y 축을 따라 요소 기울임
+            <h3>The skewX() Method, The skewY() Method : skewX () 메소드, skewY () 메소드</h3>
+            X또는 Y 축을 따라 요소 기울임
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br>div {transform: skewX(20deg);
+                <span style="color:rgb(91, 247, 44)">/*X축을 기준으로 20도 기울임*/</span>}
+                <br> div {transform: skewY(20deg);
+                <span style="color:rgb(91, 247, 44)">/*Y축을 기준으로 20도 기울임*/</span>}
                 <br>
                 <fieldset>
-                    <legend>예시</legend>
-                    <br>div {transform: skewX(20deg);
-                    <span style="color:rgb(91, 247, 44)">/*X축을 기준으로 20도 기울임*/</span>}
-                    <br> div {transform: skewY(20deg);
-                    <span style="color:rgb(91, 247, 44)">/*Y축을 기준으로 20도 기울임*/</span>}
-                    <br>
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <div id="t6">x축을 기준으로 20도 기울임</div>
-                        <div id="t7">y축을 기준으로 20도 기울임</div>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <div id="t6">x축을 기준으로 20도 기울임</div>
+                    <div id="t7">y축을 기준으로 20도 기울임</div>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>skew() Method:skew(스큐)메소드</h3>
-                skew()로 X및 Y 축을 따라 요소를 기울임
-                <br>
+            <h3>skew() Method:skew(스큐)메소드</h3>
+            skew()로 X및 Y 축을 따라 요소를 기울임
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br> div {transform: skew(20deg, 10deg);
+                <span style="color:rgb(91, 247, 44)">/*X축으로 기준으로 20도, Y축을 기준으로 10도 기울임 두 번쨰 매개변수를 입력하지 않으면 X축으로만
+                    기운다.*/</span>}
                 <fieldset>
-                    <legend>예시</legend>
-                    <br> div {transform: skew(20deg, 10deg);
-                    <span style="color:rgb(91, 247, 44)">/*X축으로 기준으로 20도, Y축을 기준으로 10도 기울임 두 번쨰 매개변수를 입력하지 않으면 X축으로만 기운다.*/</span>}
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <div id="t8">The skew() method skews an element into a given angle.</div>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <div id="t8">The skew() method skews an element into a given angle.</div>
                 </fieldset>
+            </fieldset>
             </p>
             <p>
-                <h3>The matrix() Method:매트릭스 메소드</h3>
-                matrix()를 사용하는 방법은 모든 2D 하나로 변환 방법을 결합, 메소드는 수학가 회전 할 수 있도록 기능, 크기, 이동 (변환)를 함유하는 여섯 개 매개 변수를 사용하고, 요소 스큐.
-                <br> 파라미터 : 앞쪽부터 scaleX () skewY () skewX () scaleY를 () translateX () translate Y() 이다.
-                <br>
+            <h3>The matrix() Method:매트릭스 메소드</h3>
+            matrix()를 사용하는 방법은 모든 2D 하나로 변환 방법을 결합, 메소드는 수학가 회전 할 수 있도록 기능, 크기, 이동 (변환)를 함유하는 여섯 개 매개 변수를 사용하고, 요소 스큐.
+            <br> 파라미터 : 앞쪽부터 scaleX () skewY () skewX () scaleY를 () translateX () translate Y() 이다.
+            <br>
+            <fieldset>
+                <legend>예시</legend>
+                <br>div {transform: matrix(1, -0.3, 0, 1, 0, 0);}
                 <fieldset>
-                    <legend>예시</legend>
-                    <br>div {transform: matrix(1, -0.3, 0, 1, 0, 0);}
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <div id="t9">매트릭스 메소드</div>
-                    </fieldset>
+                    <legend>실행결과</legend>
+                    <div id="t9">매트릭스 메소드</div>
                 </fieldset>
+            </fieldset>
             </p>
         </article>
 
@@ -880,120 +886,123 @@
         <hr>
         <article>
             <p>
-                <h3>How to Use CSS Transitions? : 어떻게 CSS 전환을 사용할 수 있나요?</h3>
-                어떻게 CSS 전환을 사용할 수 있나요?
-                <br> 당신이 원하는 CSS의 속성 효과를 추가 효과의 지속 시간 시간을 지정하지 않으면 기본 값이 0이기 때문에
-                <br> 전환이 아무런 영향을 주지 않습니다.
-                <br> 예)) 100 px * 100 px 빨강
-                <div> 요소를 나타낸다.
-                    <div>약 3 초 동안에, 가로로 늘어나는 전환 효과를 지정함:
+            <h3>How to Use CSS Transitions? : 어떻게 CSS 전환을 사용할 수 있나요?</h3>
+            어떻게 CSS 전환을 사용할 수 있나요?
+            <br> 당신이 원하는 CSS의 속성 효과를 추가 효과의 지속 시간 시간을 지정하지 않으면 기본 값이 0이기 때문에
+            <br> 전환이 아무런 영향을 주지 않습니다.
+            <br> 예)) 100 px * 100 px 빨강
+            <div> 요소를 나타낸다.
+                <div>약 3 초 동안에, 가로로 늘어나는 전환 효과를 지정함:
+                    <br>
+                    <fieldset>
+                        <legend>예시</legend>
+                        <br>div {width: 100px; height: 100px;background: red; transition: width 2s;}
+                        div:hover {width: 300px;}
+                        <fieldset>
+                            <legend>실행결과</legend>
+                            <div id="CT1"></div>
+                        </fieldset>
+                    </fieldset>
+                    </p>
+                    <p>
+                    <h3>Change Several Property Values : 여러 속성 값을 변경</h3>
+                    예) 폭이 4 초, 높이 2 초의 지속 시간 폭 및 높이의 속성 모두에 대한 전환 효과를 추가
+                    <br>
+                    <fieldset>
+                        <legend>예시</legend>
+                        <br>div {transition: width 2s, height 4s;}
+
+                        <fieldset>
+                            <legend>실행결과</legend>
+                            <div id="CT2"></div>
+                        </fieldset>
+                    </fieldset>
+                    </p>
+                    <p>
+                    <h3>Specify the Speed Curve of the Transition : 전환 속도 조정</h3>
+                    transition-timing-function속성 : 특정 애니메이션을 실행할 때 애니메이션의 가속운동, 즉 특정한 시점에서 가속할지 감속할지를 정하는 속성
+                    <br> 속성
+                    <ul>
+                        <li>ease - 느린 시작과 전환 효과를 지정하고 빠르게, 다음 (이것이 기본값입니다) 천천히 종료</li>
+                        <li>linear - 처음부터 끝까지 같은 속도로 전환 효과를 지정</li>
+                        <li>ease-in - 느린 시작과 전환 효과를 지정합니다</li>
+                        <li>ease-out - 느린 엔드와 전환 효과를 지정합니다</li>
+                        <li>ease-in-out - 느린 시작과 끝이있는 전환 효과를 지정합니다</li>
+                        <li>cubic-bezier(n,n,n,n) - 당신은 입방 베 지어 함수에서 자신의 값을 정의 할 수 있습니다.
+                            <br> (P0는 (1, 1) 최종 시간 및 최종 상태를 나타내고, P3이, (0, 0)의 초기 시간 및 초기 상태를 나타낸다.)
+                        </li>
+                    </ul>
+
+                    #div1 {transition-timing-function: linear;}
+                    <br> #div2 {transition-timing-function: ease;}
+                    <br> #div3 {transition-timing-function: ease-in;}
+                    <br> #div4 {transition-timing-function: ease-out;}
+                    <br> #div5 {transition-timing-function: ease-in-out;}
+                    <br>
+                    <fieldset>
+                        <legend>예시</legend>
+                        <br>div {width: 100px;height: 100px;background: red;transition: width
+                        2s;transition-timing-function: cubic-bezier(0.1,
+                        0.7, 1.0, 0.1);}
+                        <fieldset>
+                            <legend>실행결과</legend>
+                            <div id="CT3-1">linear</div>
+                            <br>
+                            <div id="CT3-2">ease</div>
+                            <br>
+                            <div id="CT3-3">ease-in</div>
+                            <br>
+                            <div id="CT3-4">ease-out</div>
+                            <br>
+                            <div id="CT3-5">ease-in-out</div>
+                            <br>
+                            <div id="CT3-6">cubic-bezier</div>
+                            <br>
+
+                        </fieldset>
+                        </p>
+                        <p>
+                        <h3>Delay the Transition Effect : 전환 효과 지연</h3>
+                        transition-delay속성은 : 전환 효과에 대한 지연 시간 (초)를 지정(1초 지연)
                         <br>
                         <fieldset>
                             <legend>예시</legend>
-                            <br>div {width: 100px; height: 100px;background: red; transition: width 2s;} div:hover {width: 300px;}
+                            <br>div {transition-delay: 1s;}
                             <fieldset>
                                 <legend>실행결과</legend>
-                                <div id="CT1"></div>
+                                <div id="CT4">Delay</div>
+                                <br>
                             </fieldset>
                         </fieldset>
-            </p>
-            <p>
-                <h3>Change Several Property Values : 여러 속성 값을 변경</h3>
-                예) 폭이 4 초, 높이 2 초의 지속 시간 폭 및 높이의 속성 모두에 대한 전환 효과를 추가
-                <br>
-                <fieldset>
-                    <legend>예시</legend>
-                    <br>div {transition: width 2s, height 4s;}
-
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <div id="CT2"></div>
-                    </fieldset>
-                </fieldset>
-            </p>
-            <p>
-                <h3>Specify the Speed Curve of the Transition : 전환 속도 조정</h3>
-                transition-timing-function속성 : 특정 애니메이션을 실행할 때 애니메이션의 가속운동, 즉 특정한 시점에서 가속할지 감속할지를 정하는 속성
-                <br> 속성
-                <ul>
-                    <li>ease - 느린 시작과 전환 효과를 지정하고 빠르게, 다음 (이것이 기본값입니다) 천천히 종료</li>
-                    <li>linear - 처음부터 끝까지 같은 속도로 전환 효과를 지정</li>
-                    <li>ease-in - 느린 시작과 전환 효과를 지정합니다</li>
-                    <li>ease-out - 느린 엔드와 전환 효과를 지정합니다</li>
-                    <li>ease-in-out - 느린 시작과 끝이있는 전환 효과를 지정합니다</li>
-                    <li>cubic-bezier(n,n,n,n) - 당신은 입방 베 지어 함수에서 자신의 값을 정의 할 수 있습니다.
-                        <br> (P0는 (1, 1) 최종 시간 및 최종 상태를 나타내고, P3이, (0, 0)의 초기 시간 및 초기 상태를 나타낸다.)</li>
-                </ul>
-
-                #div1 {transition-timing-function: linear;}
-                <br> #div2 {transition-timing-function: ease;}
-                <br> #div3 {transition-timing-function: ease-in;}
-                <br> #div4 {transition-timing-function: ease-out;}
-                <br> #div5 {transition-timing-function: ease-in-out;}
-                <br>
-                <fieldset>
-                    <legend>예시</legend>
-                    <br>div {width: 100px;height: 100px;background: red;transition: width 2s;transition-timing-function: cubic-bezier(0.1,
-                    0.7, 1.0, 0.1);}
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <div id="CT3-1">linear</div>
+                        </p>
+                        <p>
+                        <h3>Transition + Transformation : 전환 + 변환</h3>
+                        전환 효과에 대한 변환을 추가
                         <br>
-                        <div id="CT3-2">ease</div>
+                        <fieldset>
+                            <legend>예시</legend>
+                            <br>div {transition: width 2s, height 2s, transform 2s;}
+                            <fieldset>
+                                <legend>실행결과</legend>
+                                <div id="CT5">Transition + Transformation</div>
+                                <br>
+                            </fieldset>
+                        </fieldset>
+                        </p>
+                        <p>
+                        <h3>More Transition Examples : 더 많은 전환 예</h3>
+                        CSS의 전환 특성을 하나씩 지정할 수 있습니다 :
                         <br>
-                        <div id="CT3-3">ease-in</div>
-                        <br>
-                        <div id="CT3-4">ease-out</div>
-                        <br>
-                        <div id="CT3-5">ease-in-out</div>
-                        <br>
-                        <div id="CT3-6">cubic-bezier</div>
-                        <br>
-
-                    </fieldset>
-            </p>
-            <p>
-                <h3>Delay the Transition Effect : 전환 효과 지연</h3>
-                transition-delay속성은 : 전환 효과에 대한 지연 시간 (초)를 지정(1초 지연)
-                <br>
-                <fieldset>
-                    <legend>예시</legend>
-                    <br>div {transition-delay: 1s;}
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <div id="CT4">Delay</div>
-                        <br>
-                    </fieldset>
-                </fieldset>
-            </p>
-            <p>
-                <h3>Transition + Transformation : 전환 + 변환</h3>
-                전환 효과에 대한 변환을 추가
-                <br>
-                <fieldset>
-                    <legend>예시</legend>
-                    <br>div {transition: width 2s, height 2s, transform 2s;}
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <div id="CT5">Transition + Transformation</div>
-                        <br>
-                    </fieldset>
-                </fieldset>
-            </p>
-            <p>
-                <h3>More Transition Examples : 더 많은 전환 예</h3>
-                CSS의 전환 특성을 하나씩 지정할 수 있습니다 :
-                <br>
-                <fieldset>
-                    <legend>예시</legend>
-                    <br>div {transition-property: width; transition-duration: 2s; transition-timing-function: linear; transition-delay: 1s;}
-                    <fieldset>
-                        <legend>실행결과</legend>
-                        <div id="CT6">Examples</div>
-                        <br>
-                    </fieldset>
-                </fieldset>
-            </p>
+                        <fieldset>
+                            <legend>예시</legend>
+                            <br>div {transition-property: width; transition-duration: 2s; transition-timing-function: linear; transition-delay: 1s;}
+                            <fieldset>
+                                <legend>실행결과</legend>
+                                <div id="CT6">Examples</div>
+                                <br>
+                            </fieldset>
+                        </fieldset>
+                        </p>
         </article>
     </section>
     <footer>

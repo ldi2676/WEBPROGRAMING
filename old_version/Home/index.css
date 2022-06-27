@@ -1,17 +1,27 @@
-body, html {
-    margin: 10;
-    padding: 5;
+html {
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
-    background-repeat:no-repeat;
-    background-size: 100%;
+    
     
     color:white;
       
       
   }
+header{
+  max-height: 50px;
+  position: static;
+  background-color: rgb(8, 85, 8);
+  text-align: left;
+  padding: 0px 0px 0px 10px;
+}
   body{
+    margin: 0px;
     background-image: url(../../image/움짤20210705_104026.gif);
+    background-repeat:no-repeat;
+    background-size: 100%;
+    text-align: center;
   }
   a {
     color: white;
@@ -152,7 +162,8 @@ html{
 }
 .dropdown-content {
   display: none;
-  position: absolute;
+  text-align: center;
+  position: relative;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);

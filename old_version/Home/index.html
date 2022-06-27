@@ -10,15 +10,40 @@
 
   </style>
 
+  <header>
+    <div class="dropdown" id="profile">
+      <span style>ldoi의 개발 블로그 입니다</span>
+      <button class="dropbtn">menu</button>
+      <span class="dropdown-content">
+        <a href="../study/html.html">html</a>
+        <a href="../css.html">css</a>
+        <a href="../javascript.html">JavaScript</a>
+        <a href="../web.html">WEB</a>
+        <a href="../data/download.html">다운로드</a>
+        <a href="../Development/test.html">테스트 링크 페이지</a>
+        <a href="../service/change_mouse_pointer.html">마우스 포인터 변경</a>
+        <a href="../data/과제3.html">웹프로그래밍 자료</a>
+        <a href="../service/login.html">로그인</a>
+      </span>
+    </div>
+    <button onClick="window.location.reload()" style="float: right;">새로 고침</button>
+    <button style="float: right;">검색</button>
+    <input type='text' style="float: right;" placeholder='검색어 입력'>
 
+
+  </header>
 </head>
 
 <body>
+
   <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="index.js"></script>
-  <script type="text/javascript" src="scroll_indicater.js"></script>
-  <button onClick="window.location.reload()">새로 고침</button>
+  <script type="text/javascript" src="../service/scroll_indicater.js"></script>
+
   <script>
+    var mouse_img = sessionStorage.getItem('mouse_img');
+    document.getElementsByTagName("body")[0].style.cursor = mouse_img
+
   </script>
 
   <h1><a href="index.html">HOME</a></h1>
@@ -27,34 +52,21 @@
     <div class="bar" id="myBar"></div>
     <!-- 스크롤 인디케이터 게이지 -->
   </div>
-
-  <br>
-  <div class="dropdown" id="profile">
-    <span>ldoi의 개발 블로그 입니다</span>
-    <br>
-    <button class="dropbtn">menu</button>
-    <div class="dropdown-content">
-      <a href="../study/html.html">html</a>
-      <a href="../css.html">css</a>
-      <a href="../javascript.html">JavaScript</a>
-      <a href="../web.html">WEB</a>
-      <a href="../data/download.html">다운로드</a>
-      <a href="../Development/test.html">테스트 링크 페이지</a>
-      <a href="../service/change_mouse_pointer.html">마우스 포인터 변경</a>
-      <a href="../data/과제3.html">예전 웹프 자료</a>
-      <a href="../service/login.html">로그인</a>
-    </div>
+  <div style="margin: 0 auto;  background-color:white; color:black; width: 90%;">
+    글 내용입니다.
+    현재 배경으로 사용하고 있는 게임은 코드베인의 인게임 화면입니다.
+    <br />현재 이 페이지는 깃 허브 업로드 연습용 페이지이며 때문에 react를 사용하지 않고 html, css, js(vanilla), jQuery를 사용하여 만들어졌습니다.
+    <br />더 많은 자료는 깃허브 페이지에서 찾아주세요. 감사합니다.
+    <br />유튜브 주소 : <a style="color:blue" href="https://www.youtube.com">https://www.youtube.com/</a>
   </div>
+
 </body>
 
 </html>
 <input type="checkbox" id="menuicon">
 <!-- //input의 checked시 transition이 동작하는 기능을 활용 -->
 
-<div>
-  <input type='text' placeholder='검색어 입력'>
-  <button>검색</button>
-</div>
+
 
 <!--Start of Tawk.to Script-->
 <!-- <script type="text/javascript">

@@ -51,7 +51,9 @@
 
     */
   </style>
-  <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js">
+    var mouse_img = sessionStorage.getItem('current_mouse');
+  </script>
 
 </head>
 
@@ -63,19 +65,22 @@
     <!-- 스크롤 인디케이터 게이지 -->
   </div>
   <ol>
-    <li style="CURSOR:url(../../image/자캐.png)" id="watson" onclick={change_mouse_amellia()}>아멜리아 왓슨</li>
-    <li style="CURSOR: crosshair" onclick={change_mouse_mycharicter()}>자캐</li>
+    <li style="CURSOR:url(/image/icon_watson.png)" id="watson" onclick={change_mouse_amellia()}>아멜리아 왓슨</li>
+    <li style="CURSOR:url(/image/icon_mycharacter.png)" onclick={change_mouse_mycharicter()}>자캐</li>
   </ol>
   <script src="index.js"></script>
   <script src="scroll_indicater.js"></script>
   <script type="text/javascript">
+
     function change_mouse_amellia() {
       console.log("마우스 변경");
-      document.getElementsByTagName("body")[0].style.cursor = "url(../../image/icon_watson.png), auto";
+      document.getElementsByTagName("body")[0].style.cursor = "url(/image/icon_watson.png), auto";
+      sessionStorage.setItem('mouse_img', document.getElementsByTagName("body")[0].style.cursor)
     }
     function change_mouse_mycharicter() {
       console.log("마우스 변경");
-      document.getElementsByTagName("body")[0].style.cursor = "url(../../image/icon_mycharacter.png), auto"
+      document.getElementsByTagName("body")[0].style.cursor = "url(/image/icon_mycharacter.png), auto";
+      sessionStorage.setItem('mouse_img', document.getElementsByTagName("body")[0].style.cursor);
     }
     // $('html').css({ 'cursor': 'url(../../image/icon_mycharacter.png), auto' });
     // $('watson').css({ 'cursor': 'url(../../image/icon_watson.png), auto' });
