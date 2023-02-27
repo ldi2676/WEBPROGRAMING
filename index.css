@@ -20,7 +20,7 @@ header {
 
 body {
   margin: 0px;
-  background: url(./image/움짤20210705_104026.gif);
+  background: url("./image/움짤20210705_104026.gif");
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
